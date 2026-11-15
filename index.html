@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3CE Oliveyoung Key Account 포트폴리오</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Pretendard & Outfit 폰트 -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: {
+              50: '#FCFBF7',
+              100: '#F6F2E9',
+              200: '#EDE5D5',
+            },
+            pastelblue: {
+              50: '#F0F7FF',
+              100: '#E1EFFC',
+              200: '#C5E0FA',
+              300: '#93C5FD',
+              500: '#3B82F6',
+              600: '#2563EB',
+            },
+            ink: {
+              700: '#334E68',
+              800: '#1E3A5F',
+              900: '#102A43',
+            }
+          },
+          fontFamily: {
+            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            display: ['Outfit', 'Pretendard', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FCFBF7;
+      color: #1E3A5F;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    /* 부드러운 카드 호버 효과 */
+    .soft-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .soft-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -8px rgba(30, 58, 95, 0.08);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-pastelblue-200 selection:text-ink-900">
+
+  <!-- 상단 간결한 내비게이션 -->
+  <header class="sticky top-0 z-40 bg-cream-50/90 backdrop-blur-md border-b border-cream-200">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2.5">
+        <!-- 귀여운 미니 립스틱 아이콘 -->
+        <span class="w-8 h-8 rounded-2xl bg-pastelblue-100 flex items-center justify-center text-pastelblue-600">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 12h6v8a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-8z" fill="#FCFBF7"/>
+            <path d="M10 12V6.5L14 4v8" fill="#93C5FD"/>
+          </svg>
+        </span>
+        <span class="font-display font-bold text-base text-ink-800 tracking-tight whitespace-nowrap">
+          3CE <span class="text-pastelblue-500">×</span> OY KA
+        </span>
+      </a>
+
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-ink-700">
+        <a href="#role-fit" class="hover:text-pastelblue-600 transition-colors whitespace-nowrap">핵심 직무 매칭</a>
+        <a href="#experience" class="hover:text-pastelblue-600 transition-colors whitespace-nowrap">주요 경험</a>
+        <a href="#skills" class="hover:text-pastelblue-600 transition-colors whitespace-nowrap">보유 역량</a>
+      </nav>
+
+      <a href="#contact" class="px-4 py-2 rounded-full bg-pastelblue-500 hover:bg-pastelblue-600 text-white text-xs sm:text-sm font-semibold transition-colors whitespace-nowrap">
+        연락하기
+      </a>
+    </div>
+  </header>
+
+  <main id="top" class="max-w-5xl mx-auto px-5 sm:px-8 py-12 sm:py-16 space-y-20">
+
+    <!-- 1. 히어로 섹션 (여백 있고 단정한 첫인상) -->
+    <section class="bg-cream-100/80 border border-cream-200 rounded-[2rem] p-7 sm:p-12">
+      <div class="max-w-3xl space-y-6">
+        <!-- 지원 직무 뱃지 -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pastelblue-100 text-ink-800 text-xs sm:text-sm font-semibold">
+          <span class="w-2 h-2 rounded-full bg-pastelblue-500"></span>
+          <span class="whitespace-nowrap">L'Oréal Korea · 3CE Oliveyoung Key Account 지원</span>
+        </div>
+
+        <!-- 핵심 한 줄 소개 -->
+        <h1 class="text-2xl sm:text-4xl font-bold text-ink-900 leading-snug tracking-tight">
+          올리브영 매장의 <span class="text-pastelblue-600">현장 감각</span>과<br class="hidden sm:inline" />
+          국제물류의 <span class="text-pastelblue-600">데이터 정밀함</span>을 겸비한 지원자입니다.
+        </h1>
+
+        <p class="text-sm sm:text-base text-ink-700 leading-relaxed">
+          <span class="whitespace-nowrap font-semibold text-ink-900">올리브영 1년 8개월</span> 근무 경험과 <span class="whitespace-nowrap font-semibold text-ink-900">중앙대학교 국제물류학과</span> 전공을 바탕으로, 데일리 매출·재고 관리부터 매장·온라인몰 운영까지 빈틈없이 서포트합니다.
+        </p>
+
+        <!-- 핵심 요약 3단 지표 (줄바꿈 방지 적용) -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+          <div class="bg-cream-50 border border-cream-200 rounded-2xl p-4 flex items-center justify-between sm:block">
+            <span class="text-xs font-medium text-ink-700 block">올리브영 현장 경력</span>
+            <span class="font-display font-bold text-lg sm:text-xl text-ink-900 mt-0.5 block whitespace-nowrap">1년 8개월</span>
+          </div>
+          <div class="bg-cream-50 border border-cream-200 rounded-2xl p-4 flex items-center justify-between sm:block">
+            <span class="text-xs font-medium text-ink-700 block">POS 매대 정비 성과</span>
+            <span class="font-display font-bold text-lg sm:text-xl text-pastelblue-600 mt-0.5 block whitespace-nowrap">추가구매 2배</span>
+          </div>
+          <div class="bg-cream-50 border border-cream-200 rounded-2xl p-4 flex items-center justify-between sm:block">
+            <span class="text-xs font-medium text-ink-700 block">데이터 · 자동화 툴</span>
+            <span class="font-display font-bold text-lg sm:text-xl text-ink-900 mt-0.5 block whitespace-nowrap">Excel VBA · GAIQ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Oliveyoung Key Account 6대 주요 업무 매칭 -->
+    <section id="role-fit" class="scroll-mt-24 space-y-6">
+      <div class="space-y-1.5">
+        <span class="text-xs font-bold tracking-wider text-pastelblue-600 uppercase">Role Alignment</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-ink-900">6대 핵심 업무 매칭</h2>
+        <p class="text-sm text-ink-700">채용 공고의 주요 업무별 저의 강점을 간결하게 연결했습니다.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+        <!-- 업무 1 -->
+        <div class="soft-card bg-cream-50 border border-cream-200 rounded-2xl p-5 sm:p-6 space-y-2.5">
+          <div class="flex items-center justify-between gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-pastelblue-100 text-ink-800 text-xs font-bold whitespace-nowrap">01. 매출 · 발주 · 재고</span>
+            <i data-lucide="bar-chart-2" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+          </div>
+          <h3 class="text-base font-bold text-ink-900">데일리 매출 데이터 업데이트 및 발주·재고 관리</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            <span class="font-semibold text-ink-800">국제물류학 전공</span> 및 <span class="font-semibold text-ink-800">MFC 경제성 분석 논문</span>으로 재고 효율을 이해하며, <span class="whitespace-nowrap font-semibold text-ink-800">엑셀 함수·피벗테이블</span>로 정교한 데이터 집계가 가능합니다.
+          </p>
+        </div>
+
+        <!-- 업무 2 -->
+        <div class="soft-card bg-cream-50 border border-cream-200 rounded-2xl p-5 sm:p-6 space-y-2.5">
+          <div class="flex items-center justify-between gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-pastelblue-100 text-ink-800 text-xs font-bold whitespace-nowrap">02. 시스템 등록</span>
+            <i data-lucide="check-square" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+          </div>
+          <h3 class="text-base font-bold text-ink-900">올리브영 시스템 상품·프로모션 등록</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            인턴 당시 <span class="whitespace-nowrap font-semibold text-ink-800">엑셀 VBA 자동화</span>로 반복 서류 오류를 줄인 꼼꼼함으로, 세일·프로모션 SKU 정보를 오차 없이 등록합니다.
+          </p>
+        </div>
+
+        <!-- 업무 3 -->
+        <div class="soft-card bg-cream-50 border border-cream-200 rounded-2xl p-5 sm:p-6 space-y-2.5">
+          <div class="flex items-center justify-between gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-cream-100 text-ink-800 text-xs font-bold whitespace-nowrap">03. 고객 · 매장 CS</span>
+            <i data-lucide="message-circle" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+          </div>
+          <h3 class="text-base font-bold text-ink-900">고객·매장 문의 접수 및 대응 지원</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            <span class="whitespace-nowrap font-semibold text-ink-800">올리브영 1년 8개월</span> 근무 경험으로 매장 스태프와 고객의 니즈를 정확히 파악하며, <span class="font-semibold text-ink-800">대리직구 계정 운영</span>을 통해 신속한 CS 역량을 쌓았습니다.
+          </p>
+        </div>
+
+        <!-- 업무 4 -->
+        <div class="soft-card bg-cream-50 border border-cream-200 rounded-2xl p-5 sm:p-6 space-y-2.5">
+          <div class="flex items-center justify-between gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-cream-100 text-ink-800 text-xs font-bold whitespace-nowrap">04. 신규 매장 일정</span>
+            <i data-lucide="calendar" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+          </div>
+          <h3 class="text-base font-bold text-ink-900">신규 오픈 매장 관련 공지 및 일정 관리</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            해외 법인 인턴 및 교환학생을 거치며 검증된 <span class="font-semibold text-ink-800">빠른 업무 적응력</span>과 <span class="font-semibold text-ink-800">강한 책임감</span>으로 오픈 일정과 공지를 누락 없이 관리합니다.
+          </p>
+        </div>
+
+        <!-- 업무 5 -->
+        <div class="soft-card bg-cream-50 border border-cream-200 rounded-2xl p-5 sm:p-6 space-y-2.5">
+          <div class="flex items-center justify-between gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-pastelblue-100 text-ink-800 text-xs font-bold whitespace-nowrap">05. 온라인몰 · PDP</span>
+            <i data-lucide="layout" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+          </div>
+          <h3 class="text-base font-bold text-ink-900">온라인몰 기획전·썸네일·PDP 교체 지원</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            독일 교환학생 수업에서 <span class="font-semibold text-ink-800">한국 색조기업 'D'사</span>의 서치엔진(SEO)·상세페이지 개선안을 도출했으며, <span class="whitespace-nowrap font-semibold text-ink-800">GAIQ 자격증</span>을 보유했습니다.
+          </p>
+        </div>
+
+        <!-- 업무 6 -->
+        <div class="soft-card bg-cream-50 border border-cream-200 rounded-2xl p-5 sm:p-6 space-y-2.5">
+          <div class="flex items-center justify-between gap-2">
+            <span class="px-2.5 py-1 rounded-lg bg-cream-100 text-ink-800 text-xs font-bold whitespace-nowrap">06. 테스터 발송</span>
+            <i data-lucide="package" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+          </div>
+          <h3 class="text-base font-bold text-ink-900">매장 및 FM 테스터 지급·발송</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            매장 근무 중 깨끗한 테스터가 색조 구매 전환에 미치는 영향을 체감했으며, <span class="font-semibold text-ink-800">직구 물류 발송·주문 관리</span> 경험으로 적시 지급을 완수합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 핵심 경험 요약 (간결한 타임라인 & 카드 형태) -->
+    <section id="experience" class="scroll-mt-24 space-y-6">
+      <div class="space-y-1.5">
+        <span class="text-xs font-bold tracking-wider text-pastelblue-600 uppercase">Experience</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-ink-900">주요 경험 및 프로젝트</h2>
+      </div>
+
+      <!-- 대표 성과 하이라이트 박스 -->
+      <div class="bg-pastelblue-50 border border-pastelblue-200 rounded-3xl p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="space-y-1.5">
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-pastelblue-600">
+            <span class="px-2 py-0.5 rounded bg-pastelblue-500 text-white whitespace-nowrap">대표 성과</span>
+            <span class="whitespace-nowrap">올리브영 아르바이트 · 1년 8개월</span>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-ink-900">
+            POS 매대 정비 개선으로 추가구매 건수 2배 달성
+          </h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            결제 대기 동선에 맞춰 프로모션·연관 품목 진열을 재정비하고 상시 보충 루틴을 정착시켜 추가구매 전환을 2배로 높였습니다.
+          </p>
+        </div>
+        <div class="shrink-0 bg-cream-50 border border-pastelblue-200 rounded-2xl px-5 py-3 text-center">
+          <span class="text-[11px] font-semibold text-ink-700 block whitespace-nowrap">추가구매 건수</span>
+          <span class="font-display font-bold text-2xl text-pastelblue-600 whitespace-nowrap">2.0x 증가</span>
+        </div>
+      </div>
+
+      <!-- 나머지 4개 경험 2x2 그리드 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+        <div class="bg-cream-50 border border-cream-200 rounded-2xl p-5 space-y-1.5">
+          <span class="text-xs font-semibold text-pastelblue-600 whitespace-nowrap">인턴십 · 1개월</span>
+          <h3 class="text-base font-bold text-ink-900">LS메탈 베트남 법인 영업통관팀</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            엑셀 VBA 프로그램을 활용해 반복적인 서류 작업을 자동화하고, 제품 주문 접수 시 납기·통관 일정을 관리했습니다.
+          </p>
+        </div>
+
+        <div class="bg-cream-50 border border-cream-200 rounded-2xl p-5 space-y-1.5">
+          <span class="text-xs font-semibold text-pastelblue-600 whitespace-nowrap">교환학생 프로젝트 · 독일</span>
+          <h3 class="text-base font-bold text-ink-900">한국 색조기업 'D'사 서치엔진 분석</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            Digital Marketing 수업에서 한국 색조 브랜드 사이트의 검색 유입 구조를 진단하고 온라인 상세페이지 개선안을 제안했습니다.
+          </p>
+        </div>
+
+        <div class="bg-cream-50 border border-cream-200 rounded-2xl p-5 space-y-1.5">
+          <span class="text-xs font-semibold text-pastelblue-600 whitespace-nowrap">졸업논문 · 중앙대 국제물류학과</span>
+          <h3 class="text-base font-bold text-ink-900">'MFC센터의 경제성 분석' 연구</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            도심형 마이크로 풀필먼트 센터의 운영 효율성과 재고 배치 경제성을 정량 분석하며 물류·재고 관리 역량을 다졌습니다.
+          </p>
+        </div>
+
+        <div class="bg-cream-50 border border-cream-200 rounded-2xl p-5 space-y-1.5">
+          <span class="text-xs font-semibold text-pastelblue-600 whitespace-nowrap">사이드 프로젝트 · 운영</span>
+          <h3 class="text-base font-bold text-ink-900">소규모 대리직구 계정 운영</h3>
+          <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
+            주문 취합부터 해외 발주, 검수·발송, 고객 문의 응대까지 전 과정을 직접 운영하며 꼼꼼한 커뮤니케이션 역량을 길렀습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 보유 역량 및 자격 (단어 줄바꿈 완벽 방지) -->
+    <section id="skills" class="scroll-mt-24 space-y-6">
+      <div class="space-y-1.5">
+        <span class="text-xs font-bold tracking-wider text-pastelblue-600 uppercase">Skills & Qualifications</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-ink-900">학력 · 어학 · 직무 역량</h2>
+      </div>
+
+      <div class="bg-cream-100/70 border border-cream-200 rounded-3xl p-6 sm:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-cream-200">
+          <!-- 컬럼 1: 학력 & 자격 -->
+          <div class="space-y-3 md:pr-6">
+            <h3 class="text-sm font-bold text-ink-900 flex items-center gap-2">
+              <i data-lucide="graduation-cap" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+              <span>학력 및 자격</span>
+            </h3>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-ink-700">
+              <li class="flex items-center justify-between gap-2">
+                <span>중앙대학교 국제물류학과</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-cream-50 border border-cream-200 text-xs font-semibold text-ink-800 whitespace-nowrap">졸업예정</span>
+              </li>
+              <li class="flex items-center justify-between gap-2">
+                <span>Google Analytics</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-pastelblue-100 text-xs font-semibold text-ink-800 whitespace-nowrap">GAIQ 자격증</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 컬럼 2: 공인 어학 -->
+          <div class="space-y-3 pt-5 md:pt-0 md:px-6">
+            <h3 class="text-sm font-bold text-ink-900 flex items-center gap-2">
+              <i data-lucide="globe" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+              <span>어학 능력</span>
+            </h3>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-ink-700">
+              <li class="flex items-center justify-between gap-2">
+                <span class="whitespace-nowrap">TOEIC Speaking</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-pastelblue-100 text-xs font-bold text-ink-900 whitespace-nowrap">IH(150점)</span>
+              </li>
+              <li class="flex items-center justify-between gap-2">
+                <span class="whitespace-nowrap">중국어 (초급)</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-cream-50 border border-cream-200 text-xs font-semibold text-ink-800 whitespace-nowrap">HSK 3급 (263점)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 컬럼 3: 툴 & 강점 -->
+          <div class="space-y-3 pt-5 md:pt-0 md:pl-6">
+            <h3 class="text-sm font-bold text-ink-900 flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4 text-pastelblue-500 shrink-0"></i>
+              <span>OA 및 핵심 강점</span>
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-pastelblue-100 text-ink-900 text-xs font-semibold whitespace-nowrap">엑셀 함수 · 피벗테이블</span>
+              <span class="px-3 py-1 rounded-full bg-pastelblue-100 text-ink-900 text-xs font-semibold whitespace-nowrap">엑셀 VBA 자동화</span>
+              <span class="px-3 py-1 rounded-full bg-cream-50 border border-cream-200 text-ink-800 text-xs font-semibold whitespace-nowrap">꼼꼼함</span>
+              <span class="px-3 py-1 rounded-full bg-cream-50 border border-cream-200 text-ink-800 text-xs font-semibold whitespace-nowrap">책임감</span>
+              <span class="px-3 py-1 rounded-full bg-cream-50 border border-cream-200 text-ink-800 text-xs font-semibold whitespace-nowrap">빠른 업무 적응력</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 심플 Contact 푸터 카드 -->
+    <section id="contact" class="scroll-mt-24">
+      <div class="bg-ink-800 text-cream-50 rounded-3xl p-7 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="space-y-1.5">
+          <span class="text-xs font-semibold text-pastelblue-300 uppercase tracking-wider">Contact</span>
+          <h2 class="text-xl sm:text-2xl font-bold">
+            3CE와 올리브영을 잇는 든든한 파트너가 되겠습니다.
+          </h2>
+          <p class="text-xs sm:text-sm text-cream-200">
+            이메일: <span class="font-display font-medium text-white">danha17@naver.com</span>
+          </p>
+        </div>
+
+        <button onclick="copyEmail('danha17@naver.com')" class="px-5 py-3 rounded-2xl bg-pastelblue-500 hover:bg-pastelblue-600 text-white text-xs sm:text-sm font-semibold transition-colors flex items-center gap-2 shrink-0 whitespace-nowrap">
+          <i data-lucide="copy" class="w-4 h-4"></i>
+          <span>이메일 복사하기</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 복사 완료 토스트 메시지 -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 hidden items-center gap-2 px-4 py-3 rounded-2xl bg-ink-900 text-cream-50 text-xs sm:text-sm font-medium shadow-lg">
+    <i data-lucide="check" class="w-4 h-4 text-pastelblue-300"></i>
+    <span id="toastMessage">이메일이 복사되었습니다.</span>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    let toastTimer;
+    function copyEmail(email) {
+      const temp = document.createElement('input');
+      temp.value = email;
+      document.body.appendChild(temp);
+      temp.select();
+      try {
+        document.execCommand('copy');
+        const toast = document.getElementById('toast');
+        document.getElementById('toastMessage').textContent = `이메일(${email})이 복사되었습니다.`;
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 2800);
+      } catch (e) {
+        // 복사 실패 시 조용히 무시
+      }
+      document.body.removeChild(temp);
+    }
+  </script>
+</body>
+</html>
